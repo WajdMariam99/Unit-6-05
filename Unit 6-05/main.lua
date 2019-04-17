@@ -36,10 +36,10 @@ local function EnterButtonTouch( event )
     
     day = ( DayTextField.text )
 
-if ( age > 7 ) and (day == "Saturday" or day == "Sunday")then
+if ( age > 0 ) and (day == "Saturday" or day == "Sunday")then
 	ResponseText.text = "Time to relax for weekend!"
 
-	elseif ( age > 18 ) and ( day ~= "Saturday" or day ~= "Sunday") then
+	elseif ( age >= 18 ) and ( day ~= "Saturday" or day ~= "Sunday") then
     ResponseText.text = "Time to go to work!"
 
     elseif ( age < 18 ) and ( day ~= "Saturday" or day ~= "Sunday") then
